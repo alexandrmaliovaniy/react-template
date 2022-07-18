@@ -4,11 +4,11 @@
 - React@17
 - Jest
 - Scss
-- Storybook
+- Docker
 
 # Project structure (src folder)
 
-- `@components` - interface components that not included in `@ui` or composition of components
+- `@components` - small components, shared over all pages
 - `@pages` - complete ready to use page components
 - `@hooks` - hooks folder
 - `@utils` - folder for useful js pure functions
