@@ -310,14 +310,13 @@ module.exports = function (webpackEnv) {
         .map(ext => `.${ext}`)
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
-        "@ui": path.resolve(__dirname, "../src/ui/"),
         "@pages": path.resolve(__dirname, "../src/pages/"),
         "@hooks": path.resolve(__dirname, "../src/hooks/"),
         "@images":  path.resolve(__dirname, "../public/images/"),
         "@components":  path.resolve(__dirname, "../src/components/"),
         "@utils":  path.resolve(__dirname, "../src/utils/"),
         "@translations":  path.resolve(__dirname, "../src/translations/"),
-        "@layouts":  path.resolve(__dirname, "../src/layouts/"),
+        "@features":  path.resolve(__dirname, "../src/features/"),
         "@themes":  path.resolve(__dirname, "../src/themes/"),
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
@@ -428,7 +427,7 @@ module.exports = function (webpackEnv) {
                     },
                   ],
                 ],
-                
+
                 plugins: [
                   isEnvDevelopment &&
                     shouldUseReactRefresh &&
@@ -462,7 +461,7 @@ module.exports = function (webpackEnv) {
                 cacheDirectory: true,
                 // See #6846 for context on why cacheCompression is disabled
                 cacheCompression: false,
-                
+
                 // Babel sourcemaps are needed for debugging into node_modules
                 // code.  Without the options below, debuggers like VSCode
                 // show incorrect code and set breakpoints on the wrong lines.

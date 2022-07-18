@@ -2,9 +2,6 @@
 	"compilerOptions": {
 		"baseUrl": "./",
 		"paths": {
-			"@ui/*": [
-				"./src/ui/*"
-			],
 			"@pages/*": [
 				"./src/pages/*"
 			],
@@ -23,11 +20,11 @@
 			"@translations/*": [
 				"./src/translations/*"
 			],
-			"@layouts/*": [
-				"./src/layouts/*"
-			],
 			"@themes/*": [
 				"./src/themes/*"
+			],
+			"@features/*": [
+				"./src/features/*"
 			]
 		},
 		"target": "es5",
